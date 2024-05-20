@@ -1,3 +1,5 @@
+import {useState} from "react";
+
 export default function App() {
 
   const [ count, setCount ] = useState(0);
@@ -6,7 +8,7 @@ export default function App() {
   const minus = () => setCount(count - number ); 
 
   const onChange = (e) => setCount(e.target.value);
-  
+
   const onReset = () => setCount(0);
   
   if (!count .trim())
